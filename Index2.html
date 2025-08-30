@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفهرس الموحد بجامعة صنعاء</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+body{
+       background-color:#e0f2f1;
+}
+
+    h2{
+      text-align:center;
+      color:#104d40;
+     background-color: #004d40; /* Dark teal */
+     color: #fff;
+     border-bottom: 5px solid #ffab00;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      
+      height: 50px;
+    }
+    h3{
+        text-align: center;
+        color:belec; bold
+        background-color:#01afff0;
+    }
+    form{
+        color:belac; bold
+        background-color:#e0f2f1; 
+        text-align: center;
+    }
+    
+    .main-footer {
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top:250px;
+    
+    }
+      .main-footer .container p2{
+           color:#e01fee;
+      }
+</style>
+    <div dir="rtl">
+
+      <h2>الفهرس الموحد بجامة صنعاء</h2>
+      <h3>يهدف الفهرس إلى توليد المراجع والمصادر إلى مكتبات جامعة صنعاء ، وتكوين
+       فهرس الإلكتروني موحد يخدم الطلبة والباحثين في كافة المراحل الدراسية.
+       <br>تعاون معانا وارفع كل الملفات الخاصة بك pdf في جهازك لبناء مكتبة رقمية.</h3>
+      <form>
+      
+        <input  name="title" placeholder="العنوان" onChange={handleChange} required /><br><br>
+        <input name="author" placeholder="المؤلف" onChange={handleChange} required /><br><br>
+        <div class="form-group">
+        <label for="genre">النوع:</label>
+        <select id="genre" name="genre">
+        
+        <option value="رسائل ماجستير">رسائل ماجستير</option>
+        <option value="مقالات">مقالات</option>
+        <option value="كتب">كتب</option>
+        <option value="أطروحة دكتوراة">أطروحة دكتوراة</option>
+        </select>
+        </div><br>
+        <input  name="year" placeholder="السنة" onChange={handleChange} type="number" /><br><br>
+        <input  ename="isbn" placeholder="ISBN" onChange={handleChange} /><br><br>
+ رفع صورة الغلاف<input type="file" name="cover" accept="image/*" /><br>
+ رفع ملف pdf  <input type="file" name="pdf" accept="application/pdf" /><br>
+        
+        <button type="submit">save</button><br>
+              
+          <footer class="main-footer">
+          <div class="container">
+          <p style="color:#0ff0f1">جميع الحقوق محفوظة لدى</p>
+          <p2> @ عبدالله مشورة @  <br> @ هيثم الاحمر @ <br> 2025</p>
+          
+          </div>
+          </footer>
+      </form>
+    </div>
